@@ -385,6 +385,7 @@
 }
 
 .login-container{
+  min-height: 70vh;
   padding-top:7%;
   text-align: center;
 }
@@ -395,14 +396,16 @@
 .admin-container{
   
 }
-
-.admin-container .profile-background{
+.profile-container{
+  min-height: 100vh;
+}
+.profile-background{
   background:url('./poz.png') no-repeat center center/cover;
   height:350px;
   position:relative;
   border-bottom:3px solid var(--primary-color)
 }
-.admin-container .profile-background img{
+.profile-background img{
   position:absolute;
   bottom:-55%;
   left:50%;
@@ -411,6 +414,27 @@
   height:190px;
   border-radius:50%;
   border:3px solid var(--primary-color);
+}
+.profile-text{
+  text-align: center;
+  margin-top:8%;
+}
+.profile-text ul{
+  margin-top:3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  font-size:20px;
+  color : var(--primary-color);
+}
+.profile-text ul li{
+  text-align: center;
+  list-style: none;
+}
+.profile-text ul li a{
+  text-decoration: none;
+  color:var(--primary-color);
 }
 .admin-container-content h1{
   text-align:center;
